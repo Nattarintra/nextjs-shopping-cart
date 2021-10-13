@@ -1,9 +1,15 @@
 import React from 'react';
+import Head from 'next/head';
+import NavBar from 'src/components/NavBar';
 
-export default function index() {
+const HomePage = () => {
   return (
-    <div>
-      <h1>Hello</h1>
-    </div>
+    <>
+      <Head>
+        <title>Home</title>
+      </Head>
+      <NavBar />
+    </>
   );
-}
+};
+export default HomePage;
